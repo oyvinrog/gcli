@@ -3,7 +3,7 @@
 
   
 
-This Python script helps in generating auto-complete suggestions for Windows command prompt using OpenAI's GPT-3 model. The script records the total tokens spent and the associated cost for each GPT-3 API call. The user can enter a command, and the script will provide auto-complete suggestions based on the input. The user can choose to execute the suggested command or enter a new command.
+This Python script helps in generating auto-complete suggestions for Windows command prompt using OpenAI's GPT-3 model. The script records the total tokens spent and the associated cost for each GPT-3 API call. The user can enter a command, and the script will provide auto-complete suggestions based on the input. The user will get the command copied to clipboard
 
 
 
@@ -78,7 +78,7 @@ take a SQL Server backup
 
 ```bash
 
-pip install  openai  prompt_toolkit
+pip install  openai  prompt_toolkit clipboard
 
 ```
 

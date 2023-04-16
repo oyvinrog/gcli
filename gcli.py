@@ -2,16 +2,6 @@
 
 Autocomplete in Windows terminal using openAI Davinci model
 
-Example commands:
-
-    show yellow text
-    find all files containing "hello", 
-    show files created last 3 days
-    show files with size greater than 100MB
-    show all hidden files
-    show all files with extension .txt
-    show all files with a number in the name
-
     
 How do I estimate the cost of doing this?
 ------------------------------------------------
@@ -32,13 +22,15 @@ Hourly cost ($0.03) * Hours per day (24) * Days per month (30) = $21.60
 
 """
 
-import openai
 import os
 import threading
-from prompt_toolkit import PromptSession
-from prompt_toolkit.completion import Completer, Completion
 import subprocess
 import sqlite3
+
+import openai
+import clipboard
+from prompt_toolkit import PromptSession
+from prompt_toolkit.completion import Completer, Completion
 
 def get_root_db_file():
     """Get root DB file"""
@@ -153,9 +145,9 @@ while True:
         if user_input.lower() == "exit":
             break
         else:
-            # run the command
-            print("Running command: " + user_input)
-            subprocess.run(user_input, shell=True)
+            # Copy the command to clipboard
+            clipboard.copy(user_input)
+            print("Command copied to clipboard")
 
 
     except KeyboardInterrupt:
