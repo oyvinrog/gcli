@@ -24,6 +24,10 @@ Enter a command in the prompt and see auto-complete suggestions. Choose a sugges
 
 ### Examples
 
+![delete_empty_folders](https://user-images.githubusercontent.com/16526012/232335720-441d2474-bfb2-4b2a-8a53-ab60fe453d10.jpg)
+![oracle_backup](https://user-images.githubusercontent.com/16526012/232335728-7418a158-5d3c-4cf5-b071-ea800da0ff1e.jpg)
+![sqlserver_backup](https://user-images.githubusercontent.com/16526012/232335738-85c2f724-4ba9-4ee4-b4f3-3d98e1dff31c.jpg)
+
   
 find all files containing "hello",
 
