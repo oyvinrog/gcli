@@ -73,7 +73,8 @@ def get_tokens_spent():
 def get_key():
     """Get openAI key from local file"""
 
-    with open("key.txt", "r") as f:
+    root_path = os.path.dirname(os.path.abspath(__file__))
+    with open(os.path.join(root_path, "key.txt"), "r") as f:
         key = f.read().strip()
     return key
 
